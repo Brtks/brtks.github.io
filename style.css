@@ -1,0 +1,244 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  font-family: 'Roboto';
+}
+.inline{
+  display: inline;
+}
+::selection{
+  background-color: rgba(0,0,255,0.1);
+  color: #fff;
+  text-decoration: none;
+}
+
+.top{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  background: url("img/bg.jpg");
+  background-color: #012A4A;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.logo, .logo-mob{
+  max-height: 400px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: summon-logo 2s ease;
+}
+
+@media only screen and (max-width: 810px){
+  .logo{
+    display: none;
+  }
+  .logo-mob{
+    display: inline-block;
+    max-width: 400px;
+  }
+  .title-mob{
+    font-size: 30px;
+    color: #fff;
+    display: block;
+  }
+}
+@media only screen and (min-width: 809px){
+  .logo{
+    display: inline-block;
+  }
+  .logo-mob{
+    display: none;
+    max-width: 400px;
+  }
+  .title-mob{
+    font-size: 30px;
+    color: #fff;
+    display: none;
+  }
+}
+
+.title{
+  font-size: 75px;
+  color: #fff;
+  animation: summon-title 2s ease;
+  display: block;
+  letter-spacing: 2px;
+  transition: all 2s ease-in-out;
+  cursor: default;
+}
+.title:hover{
+  letter-spacing: 3px;
+}
+
+@keyframes summon-title {
+  0%, 50%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@keyframes summon-logo {
+  0%{
+    opacity: 0;
+    height: 450px;
+  }
+  100%{
+    opacity: 1;
+    height: 400px;
+  }
+}
+
+.more-btn{
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: auto;
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0,157,255,0.05);
+}
+.down{
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  transition: all 0.1s ease;
+}
+.more-btn:hover{
+  letter-spacing: 1px;
+  background-color: rgba(0,157,255,0.1);
+}
+
+.more{
+  background-color: #2c60af;
+  text-align: center;
+}
+.about{
+  background: #2c60af;
+  text-align: center;
+  justify-content: center;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+.pad{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.title-ab{
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: underline rgba(0,0,0,0.1);
+  letter-spacing: 2px;
+  display: block;
+}
+.p-ab{
+  margin-left: 20%;
+  margin-right: 20%;
+  color: rgba(255,255,255,0.9);
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.a{
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.a:hover{
+  color: rgba(255,255,255,0.7)
+}
+
+.projects{
+  height: auto;
+  background: #285aa4;
+  text-align: center;
+  display: block;
+}
+.project{
+  background: rgba(0,0,0,0.1);
+  width: 300px;
+  margin-top: 5px;
+  margin-left: 2.5px;
+  margin-right: 2.5px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: inset 0 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+.project:hover{
+  background: rgba(0,0,0,0.2);
+  box-shadow: inset 0 10px rgba(0,0,0,0.1);
+}
+.proj-img{
+  max-height: 150px;
+  margin-top: 15px;
+  transform: rotate(0deg);
+  transition: all 0.2s ease;
+}
+.proj-img:hover{
+  transform: rotate(-10deg);
+}
+.subtitle{
+  color: rgba(0,0,0,0.5);
+  font-size: 27px;
+}
+
+.thanks{
+  background: url("img/bg-t.jpg");
+  background-color: #012A4A;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+footer{
+  background-color: #323e49;
+  height: 165px;
+  text-align: center;
+  justify-content: center;
+  font-size: 15px;
+}
+.foot-img{
+  height: 50px;
+  fill: #040024;
+  margin: 5px;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+}
+.foot-img:hover{
+  transform: rotate(360deg);
+}
+.copyright{
+  display: block;
+  color: #fff;
+}
+span:default::after{
+  background-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
+  transition: all 0.2s ease;
+}
+span:hover::after{
+  content: "TheBrtks#1276";
+  position: absolute;
+  background-color: #102a93;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+  margin-top: 15px;
+}
