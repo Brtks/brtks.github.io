@@ -99,15 +99,16 @@ body{
   color: #fff;
   text-decoration: none;
   text-align: center;
-  font-size: 50px;
+  font-size: 5vh;
   font-weight: 500;
   margin-top: auto;
   transition: all 0.3s ease-in-out;
   background-color: rgba(0,157,255,0.05);
+  max-height: 15vh;
 }
 .down{
   display: block;
-  height: 50px;
+  height: 4vh;
   width: 50px;
   margin-left: auto;
   margin-right: auto;
