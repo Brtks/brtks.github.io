@@ -22,32 +22,22 @@ body::-webkit-scrollbar {
   padding-top: 75px;
   padding-bottom: 75px;
 }
-@media only screen and (max-width: 810px){
-  .logo{
-    display: none;
-  }
-  .logo-mob{
-    display: inline-block;
-    max-width: 400px;
-  }
-  .title-mob{
-    font-size: 30px;
+@media only screen and (max-width: 750px){
+  .detector{
+    background: #000;
     color: #fff;
-    display: block;
-  }
-}
-@media only screen and (min-width: 809px){
-  .logo{
-    display: inline-block;
-  }
-  .logo-mob{
-    display: none;
-    max-width: 400px;
-  }
-}
-@media only scroll and (min-scroll: 100vh){
-  header{
     position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 100000000000000000;
+    text-align: center;
+
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 751px){
+  .detector{
+    display: none;
   }
 }
 
@@ -67,7 +57,7 @@ header{
   max-width: 150px;
   display: inline-block;
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 1vh;
 }
 .head-btn {
   background: rgba(0,0,0,0);
@@ -86,7 +76,7 @@ header{
   position: absolute;
   display: inline-block;
   margin-top: 30px;
-  margin-right: 50px;
+  margin-right: 2vw;
 }
 
 /* topper */
@@ -101,28 +91,23 @@ header{
   background-size: cover;
   background-attachment: fixed;
 }
-.logo, .logo-mob{
-  max-height: 380px;
-  max-width: 760px;
+.logo{
+  width: 40vw;
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 .title{
-  font-size: 75px;
+  font-size: 10vh;
   color: #fff;
-  animation: summon-title 2s ease;
   display: block;
-  letter-spacing: 2px;
-  transition: all 2s ease-in-out;
-  cursor: default;
 }
 .more-btn{
   display: block;
   color: #fff;
   text-decoration: none;
   text-align: center;
-  font-size: 50px;
+  font-size: 5.5vh;
   font-weight: 500;
   margin-top: auto;
   transition: all 0.3s ease-in-out;
@@ -134,7 +119,7 @@ header{
 }
 .down{
   display: block;
-  height: 50px;
+  height: 5.5vh;
   width: 50px;
   margin-left: auto;
   margin-right: auto;
